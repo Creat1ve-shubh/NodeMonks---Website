@@ -12,7 +12,7 @@ const pinyon = Pinyon_Script({
 
 export default function HeroSection() {
     return (
-        <div className="h-screen w-screen flex justify-center items-center overflow-hidden relative">
+        <div id="landing" className="h-screen w-screen flex justify-center items-center overflow-hidden relative">
             <BeamsBackground intensity="strong" />
             <span className="absolute text-white text-3xl lg:text-7xl max-w-2/3 font-semibold text-center">
                 Turning bold ideas into <br />

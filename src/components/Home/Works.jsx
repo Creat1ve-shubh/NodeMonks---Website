@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Works = () => {
     return (
-        <section className="w-full py-24 lg:py-32 bg-zinc-950 text-zinc-100 overflow-hidden font-sans">
+        <section id='works' className="w-full py-24 lg:py-32 bg-zinc-950 text-zinc-100 overflow-hidden font-sans">
             <div className="container px-4 md:px-6 mx-auto">
 
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
