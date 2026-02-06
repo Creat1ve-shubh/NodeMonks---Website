@@ -108,7 +108,6 @@ export default function Card({
                     rotateY,
                     scale,
                 }}
-                fadeIn="true"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -121,7 +120,6 @@ export default function Card({
                 <motion.img
                     src={imageSrc}
                     alt={altText}
-                    fadeIn="true"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}

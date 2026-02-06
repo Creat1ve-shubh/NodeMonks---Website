@@ -2,6 +2,8 @@ import Card from "../ui/TiltedCard";
 import { Josefin_Sans } from "next/font/google";
 import srivastava from '../assets/srivastava.jpg';
 import shubh from "../assets/shubh.jpg";
+import Vansh from "../assets/Vansh.jpg";
+
 
 const josefin = Josefin_Sans({
     subsets: ["latin"],
@@ -16,6 +18,17 @@ const cardData = [
         overlayContent: (
             <p className={`${josefin.className} text-2xl text-center p-2`}>
                 <span className="underline decoration-wavy decoration-amber-500">Shivansh Srivastava</span> <br />
+                <span className="text-lg font-extrabold text-amber-500">Co-Founder</span>
+            </p>
+        ),
+    },
+    {
+        imageSrc: Vansh.src,
+        altText: "Team Member - Vansh Tandon",
+        captionText: "Team Member",    
+        overlayContent: (
+            <p className={`${josefin.className} text-2xl text-center p-2`}>
+                <span className="underline decoration-wavy decoration-amber-500">Vansh Tandon</span> <br />
                 <span className="text-lg font-extrabold text-amber-500">Co-Founder</span>
             </p>
         ),
