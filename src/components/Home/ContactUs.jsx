@@ -16,7 +16,7 @@ export default function ContactUs() {
 
 
     return (
-        <div id="contact" className="h-screen w-screen flex justify-center ">
+        <div id="contact" className="bg-black text-white h-screen w-screen flex justify-center ">
             <div className="h-full max-sm:absolute md:w-1/2 overflow-hidden blur-3xl">
                 <iframe src="https://my.spline.design/orangeblob-jOM0Derv1R7lQ6jCZZfrHVUJ/" height={"120%"} width={"120%"} />
             </div>
@@ -28,7 +28,7 @@ export default function ContactUs() {
                 </div>
                 <div className="border-t-2 border-amber-500/60 h-1 w-1/3 m-4"></div>
                 <form className="flex flex-col w-4/5 rounded-2xl max-sm:bg-black/30 max-sm:p-8 lg:w-1/2 gap-2">
-                    <h1 className="text-xl underline decoration-amber-500 mb-3">Leave a message</h1>
+                    <h1 className="text-xl text-zinc-100 underline decoration-amber-500 mb-3">Leave a message</h1>
                     <div className="flex flex-col gap-1">
                         <label htmlFor="name">Name</label>
                         <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} className="p-2 rounded-lg border-2 border-zinc-800" />

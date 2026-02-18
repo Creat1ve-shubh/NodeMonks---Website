@@ -2,6 +2,8 @@ import Card from "../ui/TiltedCard";
 import { Josefin_Sans } from "next/font/google";
 import srivastava from '../assets/srivastava.jpg';
 import shubh from "../assets/shubh.jpg";
+import Vansh from "../assets/Vansh.jpg";
+
 
 const josefin = Josefin_Sans({
     subsets: ["latin"],
@@ -21,6 +23,17 @@ const cardData = [
         ),
     },
     {
+        imageSrc: Vansh.src,
+        altText: "Team Member - Vansh Tandon",
+        captionText: "Team Member",    
+        overlayContent: (
+            <p className={`${josefin.className} text-2xl text-center p-2`}>
+                <span className="underline decoration-wavy decoration-amber-500">Vansh Tandon</span> <br />
+                <span className="text-lg font-extrabold text-amber-500">Co-Founder</span>
+            </p>
+        ),
+    },
+    {
         imageSrc: shubh.src,
         altText: "Team Member - Shubh Shrivastava",
         captionText: "Team Member",
@@ -35,7 +48,7 @@ const cardData = [
 
 export default function AboutUs() {
     return (
-        <div id="about" className="w-screen bg-grid vignette">
+        <div id="about" className="w-screen bg-grid vignette text-white">
             <div className="flex flex-col py-20 items-center justify-center h-screen">
                 <div className="text-center text-white underline decoration-wavy mb-10 decoration-amber-500 text-4xl tracking-tight sm:text-6xl">
                     <span className={josefin.className}>The team</span>
